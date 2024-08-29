@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        menu li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div style="background-color:lightgreen; color: white; line-height: 0.8; height:80px;">
+        <h1>
+            Welcom to 김도욱's Homepage<br>
+            <p1 style="font-weight: 50; font-size: 20px;">
+                Use the menu to select different Stylesheets
+            </p1>
+        </h1>
+    </div>
+    <menu style="float:left;">
+        <div style="background-color: lightgreen;margin-bottom: 10px;width:150px; font-weight: bold; color:white;">
+            <li>
+                <a href="http://127.0.0.1:3000/style1.html">Stylesheet 1</a>
+            </li>
+        </div>
+        <div style="background-color: lightgray; border-color: black; border-width: 0.5px; border-style:solid;margin-bottom: 10px;">
+            <li>
+                <a href="http://127.0.0.1:3000/style2.html">Stylesheet 2</a>
+            </li>
+        </div>
+        <div style="background-color: lightgray; border-color: black; border-width: 0.5px; border-style:solid;margin-bottom: 10px;">
+            <li>
+                <a href="http://127.0.0.1:3000/style3.html">Stylesheet 3</a>
+            </li>
+        </div>
+        <div style="background-color: lightgray; border-color: black; border-width: 0.5px; border-style:solid;margin-bottom: 10px;">
+            <li>
+                <a href="http://127.0.0.1:3000/style4.html">Stylesheet 4</a>
+            </li>
+        </div>
+        <div style="background-color: lightgray; border-color: black; border-width: 0.5px; border-style:solid;">
+            <li>
+                <a href="http://127.0.0.1:3000/index.html">No Stylesheet</a>
+            </li>
+        </div>
+    </menu>
+    <aside style="float:right">
+        <div style="background-color: lightblue; height: 250px; width: 200px; color: white;">
+            <h1>
+                Side-Bar
+            </h1>
+            <p1>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </p1>
+        </div>
+    </aside>
+    <section>
+        <h2>
+            Same Page Different Stylesheets
+        </h2>
+        <p1>
+            This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+        </p1>
+        <li style = "list-style: none;text-decoration:underline;">
+            <a href="http://127.0.0.1:3000/style1.html">Stylesheet 1,</a>
+            <a href="http://127.0.0.1:3000/style2.html">Stylesheet 2,</a>
+            <a href="http://127.0.0.1:3000/style3.html">Stylesheet 3,</a>
+            <a href="http://127.0.0.1:3000/style4.html">Stylesheet 4</a>
+        </li>
+        <h3>
+            No styles
+        </h3>
+        <p1 style="margin-left: 190px;">
+            This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br>
+            <a href = "http://127.0.0.1:3000/index.html"; style="margin-left: 190px;text-decoration: underline;">
+                No Stylesheet.
+            </a>
+        </p1>
+    </section>
+    <footer style="text-align: center;border-color: black; border-width: 1px; border-style: solid;">
+        <div style="background-color: lightgray;">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </div>
+        
+    </footer>
+
+
+
 </body>
+
 </html>
