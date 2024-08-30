@@ -1,11 +1,121 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .back {
+            background-color: #d14836;
+        }
+
+        #top {
+            color: white;
+            margin: 4px;
+            padding: 15px;
+        }
+
+        #menulist {
+            line-height: 40px;
+            width: 155px;
+            float: right;
+        }
+
+        #menuitem {
+            background-color: #d14836;
+            border-color: black;
+            border-radius: 10px;
+            margin: 4px;
+            color: white;
+            padding-left: 30px;
+            padding-right: 15px;
+            padding-top: 3px;
+            padding-bottom: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #main {
+            background-color: white;
+            height: 500px;
+        }
+
+        .menuitem:hover {
+            background-color: white;
+            color: #d14836;
+        }
+
+        .menuitem:nth-child(2) {
+            background-color: white;
+            color: #d14836;
+            font-weight: bold;
+
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #d14836;
+            padding-top: 20px;
+        }
+
+        p1 li a {
+            text-decoration: none;
+            color: #d14836
+        }
+
+        p1 li a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="back">
+    <h1 id="top">
+        Welcome to 김도욱's Homepage
+    </h1>
+    <p1 id="top">
+        Use the menu to select different Stylesheets
+    </p1>
+    <main id="main">
+        <menu id="menulist">
+            <a id="menuitem" href="style1.html">Stylesheet 1</a>
+            <a id="menuitem" href="style2.html"
+                style="color: #d14836; background-color: white;border-color: #d14836; border-width: 1px; border-style: solid;">Stylesheet
+                2</a>
+            <a id="menuitem" href="style3.html">Stylesheet 3</a>
+            <a id="menuitem" href="style4.html">Stylesheet 4</a>
+            <a id="menuitem" href="index.html" style="padding-right: 15px; padding-left: 20px;">No
+                Stylesheet</a>
+        </menu>
+        <section>
+            <h1>
+                Same Page Different Stylesheets
+            </h1>
+            <p1>
+                This is a demonstration of how different stylesheets can change the layout of your HTML page. You can
+                change the layout of this page by selecting different stylesheets in the menu, or by selecting one of
+                the following links:<br>
+                <li style="list-style: none;">
+                    <a href="style1.html">Stylesheet 1</a>,
+                    <a href="style2.html">Stylesheet 2</a>,
+                    <a href="style3.html">Stylesheet 3</a>,
+                    <a href="style4.html">Stylesheet 4</a>.
+                </li>
+            </p1>
+            <h2 style="padding-top: 0px;">
+                No Styles
+            </h2>
+            <p1 style="padding-top: 0px;">
+                This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br>
+                <li style="list-style: none;">
+                    <a href="nostyle.html">No Stylesheet </a>.
+            </p1>
+        </section>
+    </main>
+
+
 </body>
+
 </html>
